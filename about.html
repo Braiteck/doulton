@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#003E7E">
+		<meta name="theme-color" content="#003E7E">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/datepicker.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1359.css" media="(max-width: 1359px)">
+		<link rel="stylesheet" href="css/response_1279.css" media="(max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="cont">
+
+							<div class="logo">
+								<a href="/">
+									<img src="images/logo.svg" alt="">
+								</a>
+							</div>
+
+
+							<div class="row">
+								<div class="links">
+									<div><a href="/">Проверка подлинности</a></div>
+									<div><a href="/">Доставка и оплата</a></div>
+								</div>
+
+								<div class="account">
+									<button class="login_btn modal_link" data-content="#login_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+										Войти
+									</button>
+								</div>
+
+								<button class="callback_btn modal_link" data-content="#callback_modal">Заказать звонок</button>
+
+								<div class="phone">
+									<a href="tel:88005555555">8 800 555-55-55</a>
+								</div>
+							</div>
+
+
+							<div class="row">
+								<nav class="menu">
+									<div class="item">
+										<a href="/">о компании</a>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link active">
+											наша продукция<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div><a href="/">Фильтры под раковину со смесителем</a></div>
+											<div><a href="/">Фильтры-бутылки</a></div>
+											<div><a class="active">Аксессуары и сменные модули</a></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">
+											поддержка<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div><a href="/">Документация</a></div>
+											<div><a href="/">Вопрос-ответ</a></div>
+											<div><a href="/">Гарантия</a></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">
+											сервис<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div><a href="/">Монтаж</a></div>
+											<div><a href="/">Обслуживание</a></div>
+											<div><a href="/">Ремонт</a></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/">блог</a>
+									</div>
+
+									<div class="item">
+										<a href="/">контакты</a>
+									</div>
+								</nav>
+
+
+								<div class="search modal_cont">
+									<button class="link mini_modal_link" data-modal-id="#search_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="search_modal">
+										<form action="">
+											<input type="text" name="" value="" class="input" placeholder="Поиск по сайту">
+
+											<button type="submit" class="submit_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+											</button>
+										</form>
+									</div>
+								</div>
+
+
+								<a href="/" class="cart_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+
+						<div class="contacts">
+							<button class="callback_btn modal_link" data-content="#callback_modal">Заказать звонок</button>
+
+							<div class="phone">
+								<a href="tel:88005555555">8 800 555-55-55</a>
+							</div>
+						</div>
+
+
+						<div class="search modal_cont">
+							<button class="link mini_modal_link" data-modal-id="#mob_search_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="mob_search_modal">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Поиск по сайту">
+
+									<button type="submit" class="submit_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+								</form>
+							</div>
+						</div>
+
+
+						<a href="/" class="cart_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+						</a>
+
+
+						<button class="mob_menu_link">
+							<span></span>
+						</button>
+
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+
+						<div class="breadcrumbs">
+							<a href="/">Главная</a> <span class="sep">/</span>
+							О компании
+						</div>
+
+					</div>
+				</section>
+
+
+				<section class="about_info">
+					<div class="cont">
+
+						<div class="data">
+							<div class="block_head center">
+								<div class="title"><span>О компании</span> Doulton</div>
+							</div>
+
+							<div class="text_block">
+								<p><b>Doulton&reg;</b> – пионер в области обеспечения людей чистой питьевой водой начиная <b>с 1826 года</b>. За счет использования полностью природных материалов наши керамические фильтры улучшают внешний вид, запах и вкус водопроводной воды, <b>очищая ее от 99,99% примесей, а также бактерий, цист и частиц</b>, сохраняя при этом полезные минералы.</p>
+							</div>
+
+
+							<div class="sub_title">Мы являемся родоначальниками <span>керамических картриджей и сердечников</span></div>
+
+							<div class="text_block">
+								<p>Расположенный в графстве Северный Стаффордшир – сердце традиционного керамического производства Великобритании, Doulton® производит и продает керамические фильтры в 140 стран мира.</p>
+
+								<p>Идея современной фильтровальной керамической свечи была разработана Генри Дултоном еще в 1826 году. Он понял, что очистка воды через пористую керамику может уберечь людей от риска заболеть холерой или другими болезнями, передаваемыми через воду.</p>
+							</div>
+
+							<img data-src="images/history_img1.png" alt="" class="lozad img1">
+							<img data-src="images/history_img2.png" alt="" class="lozad img2">
+						</div>
+
+					</div>
+
+					<div class="bg lozad" data-background-image="images/bg_subscribe.png"></div>
+				</section>
+
+
+				<section class="about_now">
+					<div class="cont">
+
+						<div class="block_head center">
+							<div class="title"><span>Doulton</span> сегодня</div>
+						</div>
+
+
+						<div class="text_block">
+							<p><b>Для нас имя Далтон ассоциируется с традицией и качеством</b>. Бренд достойный доверия, которым можно гордиться и стремиться им обладать.</p>
+
+							<p>В нашем арсенале имеется широкий ассортимент продукции и мы обладаем способностью адаптировать нашу продукцию в соответствии с требованиями современного рынка.</p>
+						</div>
+
+					</div>
+				</section>
+
+
+				<section class="gallery_block">
+					<div class="cont">
+
+						<div class="row">
+							<a href="images/tmp/gallery_img10.jpg" class="fancy_img" data-fancybox="gallery">
+								<img src="images/tmp/gallery_img10.jpg" alt="">
+							</a>
+
+							<a href="images/tmp/gallery_img11.jpg" class="fancy_img" data-fancybox="gallery">
+								<img src="images/tmp/gallery_img11.jpg" alt="">
+							</a>
+
+							<a href="images/tmp/gallery_img12.jpg" class="fancy_img" data-fancybox="gallery">
+								<img src="images/tmp/gallery_img12.jpg" alt="">
+							</a>
+
+							<a href="images/tmp/gallery_img13.jpg" class="fancy_img" data-fancybox="gallery">
+								<img src="images/tmp/gallery_img13.jpg" alt="">
+							</a>
+
+							<a href="images/tmp/gallery_img14.jpg" class="fancy_img" data-fancybox="gallery">
+								<img src="images/tmp/gallery_img14.jpg" alt="">
+							</a>
+
+							<a href="images/tmp/gallery_img15.jpg" class="fancy_img" data-fancybox="gallery">
+								<img src="images/tmp/gallery_img15.jpg" alt="">
+							</a>
+
+							<a href="images/tmp/gallery_img16.jpg" class="fancy_img" data-fancybox="gallery">
+								<img src="images/tmp/gallery_img16.jpg" alt="">
+							</a>
+
+							<a href="images/tmp/gallery_img17.jpg" class="fancy_img" data-fancybox="gallery">
+								<img src="images/tmp/gallery_img17.jpg" alt="">
+							</a>
+
+							<a href="images/tmp/gallery_img18.jpg" class="fancy_img" data-fancybox="gallery">
+								<img src="images/tmp/gallery_img18.jpg" alt="">
+							</a>
+						</div>
+
+					</div>
+				</section>
+
+
+				<section class="history block">
+					<div class="cont">
+
+						<div class="block_head center">
+							<div class="title"><span>Международное</span> признание</div>
+						</div>
+
+
+						<div class="block_desc blue">
+							<p><b>Doulton®</b> продолжает дело Генри Дултона, о чем свидетельствует <b>множество наград и международное признание</b> за прочную приверженность инновациям и обеспечение того, что вода, которую пьете вы и ваша семья, является чистой, вкусной и не содержит каких-либо вредных примесей.</p>
+
+							<p>Наше стремление к совершенству в фильтрации воды основано на многолетнем опыте в разработке инновационных решений и поддержании высоких международных стандартов, что обеспечивает производство продукта самого высшего качества. <b>Doulton®</b> обладает множеством сертификатов в своей области и активно способствует продвижению идей, связанных с бережным отношением к окружающей среде, производя продукцию из полностью природных материалов.</p>
+						</div>
+
+						<div class="logos">
+							<div class="item">
+								<img data-src="images/tmp/hictory_logo1.svg" alt="" class="lozad">
+							</div>
+
+							<div class="item">
+								<img data-src="images/tmp/hictory_logo2.svg" alt="" class="lozad">
+							</div>
+
+							<div class="item">
+								<img data-src="images/tmp/hictory_logo3.svg" alt="" class="lozad">
+							</div>
+
+							<div class="item">
+								<img data-src="images/tmp/hictory_logo4.svg" alt="" class="lozad">
+							</div>
+						</div>
+
+
+						<div class="row">
+							<a href="/" class="link">Компания и сертификаты</a>
+
+							<div class="nsf_cert">
+								<div>Сертификаты, выданные Fairey Industrial Ceramics Limited.</div>
+
+								<img data-src="images/tmp/nsf_cert.png" alt="" class="lozad">
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+
+				<section class="cats_wall block">
+					<div class="cont">
+
+						<div class="block_head center">
+							<div class="title"><span>Наша</span> продукция</div>
+
+							<div class="desc text_block">
+								<p>Основная линейка нашей продукции состоит из керамических втулок и картриджей с внутренним углеродным сердечником и/или другим материалом для различных форм фильтрации воды в домашних условиях.</p>
+
+								<p>FICL также поставляет корпуса для этих картриджей – начиная от фильтров на и под столешницами, от параллельных до гравитационных фильтров.</p>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<a href="/" class="big_cat">
+								<div class="thumb">
+									<img data-src="images/tmp/cat_big_thumb.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="info">
+									<div class="name">Фильтр под раковину со смесителем</div>
+
+									<div class="desc">Долговечная система для безопасной питьевой воды прямо у вас дома - фильтр, встраиваемый в  трубопровод под кухонной мойкой.</div>
+
+									<div class="price">от <b>25 990</b> ₽</div>
+								</div>
+							</a>
+
+							<div class="list">
+								<a href="/" class="cat">
+									<div class="thumb">
+										<img data-src="images/tmp/cat_thumb.jpg" alt="" class="lozad">
+									</div>
+
+									<div class="info">
+										<div class="name">Фильтры-бутылки</div>
+
+										<div class="desc">Удобный способ заботиться о своем здоровье прямо на ходу</div>
+
+										<div class="price">от <b>5 990</b> ₽</div>
+									</div>
+								</a>
+
+								<a href="/" class="cat">
+									<div class="thumb">
+										<img data-src="images/tmp/cat_thumb2.jpg" alt="" class="lozad">
+									</div>
+
+									<div class="info">
+										<div class="name">Аксессуары и сменные модули</div>
+
+										<div class="desc">Все необходимое для своевременной замены в фильтрах Royal Doulton</div>
+
+										<div class="price">от <b>900</b> ₽</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+
+				<section class="has_question">
+					<div class="cont">
+
+						<div class="block_head center">
+							<div class="title"><span>Остались вопросы?</span><br> С удовольствием на них<br> ответим!</div>
+						</div>
+
+
+						<form action="" class="form">
+							<div class="columns row">
+								<div class="line width1of3">
+									<div class="field">
+										<input type="text" name="" value="" class="input">
+										<div class="label">Ваше имя <span class="required">*</span></div>
+									</div>
+								</div>
+
+								<div class="line width1of3">
+									<div class="field">
+										<input type="email" name="" value="" class="input">
+										<div class="label">Ваш email <span class="required">*</span></div>
+									</div>
+								</div>
+
+								<div class="line width1of3">
+									<div class="field">
+										<input type="tel" name="" value="" class="input">
+										<div class="label">+7(___) ___-__-__ <span class="required">*</span></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="line">
+								<div class="field">
+									<textarea name=""></textarea>
+									<div class="label">Сообщение <span class="required">*</span></div>
+								</div>
+							</div>
+
+
+							<div class="submit">
+								<div class="agree">
+									<input type="checkbox" name="agree" id="has_question_agree_check" checked>
+									<label for="has_question_agree_check">Согласие на обработку персональных данных в соответствии с <a href="/">Политикой конфиденциальности</a></label>
+								</div>
+
+								<button type="submit" class="submit_btn">Отправить</button>
+
+								<div class="exp">
+									<span class="required">*</span>
+									Обязательные поля для заполнения
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</section>
+
+
+				<section class="subscribe">
+					<div class="cont">
+
+						<div class="block_head center">
+							<div class="title"><span>Подпишитесь</span></div>
+
+							<div class="desc">Подпишитесь и будьте в курсе<br> <b>важных новостей и спецпреложений</b></div>
+						</div>
+
+
+						<form action="">
+							<input type="email" name="" value="" class="input" placeholder="Ваш email">
+
+							<button type="submit" class="submit_btn">Подписаться</button>
+						</form>
+
+					</div>
+
+					<div class="bg lozad" data-background-image="images/bg_subscribe.png"></div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+
+						<div class="links">
+							<div class="title">Наша продукция</div>
+
+							<div class="list">
+								<div><a href="/">Фильтры под раковину</a></div>
+								<div><a href="/">Фильтры-бутылки</a></div>
+								<div><a href="/">Аксессуары и сменные модули</a></div>
+							</div>
+						</div>
+
+
+						<div class="links">
+							<div class="title">Поддержка</div>
+
+							<div class="list">
+								<div><a href="/">Документация</a></div>
+								<div><a href="/">Вопрос-ответ</a></div>
+								<div><a href="/">Гарантия</a></div>
+							</div>
+						</div>
+
+
+						<div class="links">
+							<div class="title">Сервис центр</div>
+
+							<div class="list">
+								<div><a href="/">Монтаж</a></div>
+								<div><a href="/">Обслуживание</a></div>
+								<div><a href="/">Ремонт</a></div>
+							</div>
+						</div>
+
+
+						<div class="menu">
+							<div><a href="/">Проверка подлинности</a></div>
+							<div><a href="/">Доставка и оплата</a></div>
+							<div><a href="/">Личный кабинет</a></div>
+							<div><a href="/">О компании</a></div>
+							<div><a href="/">Блог</a></div>
+							<div><a href="/">Контакты</a></div>
+						</div>
+
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:88005555555">8 800 555-55-55</a>
+							</div>
+
+							<div class="socials">
+								<div class="title">Мы в соцсетях</div>
+
+								<div class="row">
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon icon1"><use xlink:href="images/sprite.svg#ic_soc1"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon icon2"><use xlink:href="images/sprite.svg#ic_soc2"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon icon3"><use xlink:href="images/sprite.svg#ic_soc3"></use></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">2020 &copy; Royal Doulton</div>
+
+						<div class="links">
+							<div><a href="/">Политика конфиденциальности</a></div>
+							<div><a href="/">Пользовательское соглашение</a></div>
+						</div>
+
+						<div class="creator">
+							<a href="/" target="_blank" rel="noopener">Разработка сайта - Quality Performance</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div class="overlay"></div>
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="login_modal">
+			<div class="modal_title">Вход</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input">
+							<div class="label">E-mail <span class="required">*</span></div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input">
+							<div class="label">Пароль <span class="required">*</span></div>
+
+							<button class="view_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_view"></use></svg>
+							</button>
+
+							<div class="recovery">
+								<button class="btn modal_link" data-content="#recovery_modal">Забыли пароль?</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="submit">
+						<button class="btn modal_link" data-content="#register_modal">Регистрация</button>
+
+						<button type="submit" class="submit_btn">Войти</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="register_modal">
+			<div class="modal_title">Регистрация</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+							<div class="label">Ваше имя <span class="required">*</span></div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input">
+							<div class="label">E-mail <span class="required">*</span></div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input">
+							<div class="label">Пароль <span class="required">*</span></div>
+
+							<button class="view_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_view"></use></svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="line agree">
+						<div class="field">
+							<input type="checkbox" name="agree" id="agree_check" checked>
+							<label for="agree_check">Согласие на обработку персональных данных в соответствии с <a href="/">Политикой конфиденциальности</a></label>
+						</div>
+					</div>
+
+					<div class="line exp">
+						<span class="required">*</span>
+						Обязательные поля для заполнения
+					</div>
+
+
+					<div class="submit">
+						<button class="btn modal_link" data-content="#login_modal">Войти</button>
+
+						<button type="submit" class="submit_btn">Зарегестрироватся</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal success_modal" id="register_success_modal">
+			<div class="modal_title">Спасибо!</div>
+
+			<div class="text">Вы успешно зарегистрированы.<br> Проверьте свой E-mail чтобы подтвердить его.</div>
+
+			<div class="btns">
+				<button class="close">Ок</button>
+			</div>
+		</section>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Перезвонить</div>
+
+			<div class="model_desc">
+				<b>Хотите, чтобы мы вам перезвонили?</b>
+				Пожалуйста, оставьте Ваш номер телефона.<br>
+				В рабочее время мы перезваниваем в течении 3 минут
+			</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+							<div class="label">Ваше имя <span class="required">*</span></div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input">
+							<div class="label">+7 (___) ___ - __ - __ <span class="required">*</span></div>
+						</div>
+					</div>
+
+
+					<div class="submit">
+						<button class="btn close">Отменить</button>
+
+						<button type="submit" class="submit_btn">Жду звонка</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="buy_modal">
+			<div class="modal_title">Товар добавлен в корзину</div>
+
+			<div class="cart_info">
+				<div class="product">
+					<a href="/" class="thumb">
+						<img data-src="images/tmp/cart_product_thumb.jpg" alt="" class="lozad">
+					</a>
+
+					<div class="info">
+						<div class="name">
+							<a href="/">Фильтр под раковину со смесителем Royal Doulton®</a>
+						</div>
+
+						<div class="desc">Долговечная система для безопасной питьевой воды прямо у вас дома - фильтр, встраиваемый в трубопровод под кухонной мойкой...</div>
+					</div>
+
+					<div class="amount">
+					    <button type="button" class="minus"></button>
+
+					    <input type="text" value="1" class="input"
+					      data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+					    <button type="button" class="plus"></button>
+
+					    <div class="price"><b>25 990</b> ₽</div>
+					</div>
+
+					<div class="delete">
+						<button></button>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="kit">
+				<div class="title">Покупать комплектом выгоднее</div>
+
+				<div class="row">
+					<div class="product">
+						<a href="/" target="_blank" class="thumb">
+							<img data-src="images/tmp/buy_modal_kit_thumb.jpg" alt="" class="lozad">
+						</a>
+
+						<div class="info">
+							<div class="name">
+								<a href="/">Фильтр под раковину со смесителем Royal Doulton®</a>
+							</div>
+
+							<button class="add_to_cart">Добавить к заказу</button>
+						</div>
+					</div>
+
+					<div class="product">
+						<a href="/" target="_blank" class="thumb">
+							<img data-src="images/tmp/buy_modal_kit_thumb2.jpg" alt="" class="lozad">
+						</a>
+
+						<div class="info">
+							<div class="name">
+								<a href="/">Улучшенный смеситель Royal Doulton Elite</a>
+							</div>
+
+							<button class="add_to_cart">Добавить к заказу</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="links">
+				<button class="close continue">Продолжить покупки</button>
+
+				<a href="/" class="checkout_link">Оформить заказ</a>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/datepicker.js"></script>
+		<script src="js/in-view.min.js"></script>
+		<script src="js/sticky-kit.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

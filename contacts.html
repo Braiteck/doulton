@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#003E7E">
+		<meta name="theme-color" content="#003E7E">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/datepicker.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1359.css" media="(max-width: 1359px)">
+		<link rel="stylesheet" href="css/response_1279.css" media="(max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="cont">
+
+							<div class="logo">
+								<a href="/">
+									<img src="images/logo.svg" alt="">
+								</a>
+							</div>
+
+
+							<div class="row">
+								<div class="links">
+									<div><a href="/">Проверка подлинности</a></div>
+									<div><a href="/">Доставка и оплата</a></div>
+								</div>
+
+								<div class="account">
+									<button class="login_btn modal_link" data-content="#login_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+										Войти
+									</button>
+								</div>
+
+								<button class="callback_btn modal_link" data-content="#callback_modal">Заказать звонок</button>
+
+								<div class="phone">
+									<a href="tel:88005555555">8 800 555-55-55</a>
+								</div>
+							</div>
+
+
+							<div class="row">
+								<nav class="menu">
+									<div class="item">
+										<a href="/">о компании</a>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">
+											наша продукция<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div><a href="/">Фильтры под раковину со смесителем</a></div>
+											<div><a href="/">Фильтры-бутылки</a></div>
+											<div><a href="/">Аксессуары и сменные модули</a></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">
+											поддержка<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div><a href="/">Документация</a></div>
+											<div><a href="/">Вопрос-ответ</a></div>
+											<div><a href="/">Гарантия</a></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">
+											сервис<span class="arr"></span>
+										</a>
+
+										<div class="sub_menu">
+											<div><a href="/">Монтаж</a></div>
+											<div><a href="/">Обслуживание</a></div>
+											<div><a href="/">Ремонт</a></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/">блог</a>
+									</div>
+
+									<div class="item">
+										<a class="active">контакты</a>
+									</div>
+								</nav>
+
+
+								<div class="search modal_cont">
+									<button class="link mini_modal_link" data-modal-id="#search_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="search_modal">
+										<form action="">
+											<input type="text" name="" value="" class="input" placeholder="Поиск по сайту">
+
+											<button type="submit" class="submit_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+											</button>
+										</form>
+									</div>
+								</div>
+
+
+								<a href="/" class="cart_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+
+						<div class="contacts">
+							<button class="callback_btn modal_link" data-content="#callback_modal">Заказать звонок</button>
+
+							<div class="phone">
+								<a href="tel:88005555555">8 800 555-55-55</a>
+							</div>
+						</div>
+
+
+						<div class="search modal_cont">
+							<button class="link mini_modal_link" data-modal-id="#mob_search_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="mob_search_modal">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Поиск по сайту">
+
+									<button type="submit" class="submit_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+								</form>
+							</div>
+						</div>
+
+
+						<a href="/" class="cart_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+						</a>
+
+
+						<button class="mob_menu_link">
+							<span></span>
+						</button>
+
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+
+						<div class="breadcrumbs">
+							<a href="/">Главная</a> <span class="sep">/</span>
+							Кантакты
+						</div>
+
+					</div>
+				</section>
+
+
+				<section class="contacts_info">
+					<div class="cont">
+
+						<div class="block_head center">
+							<div class="title">Кантакты</div>
+						</div>
+
+
+						<div class="data row">
+							<div class="info">
+								<div class="title"><span>Главное представительство</span><br> Doulton в Росcии</div>
+
+								<div class="item adres">
+									<div class="name">Приходите:</div>
+
+									<div class="val">Москва, проезд Донской 5-ый, дом № 15, этаж 4, комната 12А, помещение IV</div>
+								</div>
+
+								<div class="item phone">
+									<div class="name">Звоните:</div>
+
+									<div class="val">
+										<a href="tel:88005555555">8 800 555-55-55</a>
+									</div>
+								</div>
+
+								<div class="item email">
+									<div class="name">Пишите:</div>
+
+									<div class="val">
+										<a href="mailto:info@royaldoulton.ru">info@royaldoulton.ru</a>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="name">Мы в соцсетях:</div>
+
+									<div class="val socials row">
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<svg class="icon icon1"><use xlink:href="images/sprite.svg#ic_soc1"></use></svg>
+										</a>
+
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<svg class="icon icon2"><use xlink:href="images/sprite.svg#ic_soc2"></use></svg>
+										</a>
+
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<svg class="icon icon3"><use xlink:href="images/sprite.svg#ic_soc3"></use></svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="item requisites">
+									<div class="name">Наши реквизиты</div>
+
+									<div class="val row">
+										<div class="size pdf"><b>PDF</b> 5.1 Mb</div>
+
+										<a href="/" class="download">Скачать</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="map">
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AG4PP8d_j9xXV2Dc1-znlMU9mtRv3zVnO&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+							</div>
+						</div>
+
+
+						<div class="feedback row">
+							<div class="img">
+								<img data-src="images/tmp/feedback_img.jpg" alt="" class="lozad">
+							</div>
+
+							<form action="" class="form">
+								<div class="block_head">
+									<div class="title"><span>Обратная звязь</span></div>
+								</div>
+
+								<div class="columns row">
+									<div class="line">
+										<div class="field">
+											<input type="text" name="" value="" class="input">
+											<div class="label">Ваше имя <span class="required">*</span></div>
+										</div>
+									</div>
+
+									<div class="line">
+										<div class="field">
+											<input type="tel" name="" value="" class="input">
+											<div class="label">+7 (___) ___-__-__ <span class="required">*</span></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="line">
+									<div class="field">
+										<input type="email" name="" value="" class="input">
+										<div class="label">Email <span class="required">*</span></div>
+									</div>
+								</div>
+
+								<div class="line">
+									<div class="field">
+										<textarea name=""></textarea>
+										<div class="label">Сообщение <span class="required">*</span></div>
+									</div>
+								</div>
+
+
+								<div class="submit">
+									<div class="agree">
+										<input type="checkbox" name="agree" id="feedback_agree_check" checked>
+										<label for="feedback_agree_check">Согласие на обработку персональных данных в соответствии с <a href="/">Политикой конфиденциальности</a></label>
+									</div>
+
+									<button type="submit" class="submit_btn">Отправить</button>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</section>
+
+
+				<section class="history block">
+					<div class="cont">
+
+						<div class="logos">
+							<div class="item">
+								<img data-src="images/tmp/hictory_logo1.svg" alt="" class="lozad">
+							</div>
+
+							<div class="item">
+								<img data-src="images/tmp/hictory_logo2.svg" alt="" class="lozad">
+							</div>
+
+							<div class="item">
+								<img data-src="images/tmp/hictory_logo3.svg" alt="" class="lozad">
+							</div>
+
+							<div class="item">
+								<img data-src="images/tmp/hictory_logo4.svg" alt="" class="lozad">
+							</div>
+						</div>
+
+
+						<div class="row">
+							<a href="/" class="link">Компания и сертификаты</a>
+
+							<div class="nsf_cert">
+								<div>Сертификаты, выданные Fairey Industrial Ceramics Limited.</div>
+
+								<img data-src="images/tmp/nsf_cert.png" alt="" class="lozad">
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+
+				<section class="subscribe">
+					<div class="cont">
+
+						<div class="block_head center">
+							<div class="title"><span>Подпишитесь</span></div>
+
+							<div class="desc">Подпишитесь и будьте в курсе<br> <b>важных новостей и спецпреложений</b></div>
+						</div>
+
+
+						<form action="">
+							<input type="email" name="" value="" class="input" placeholder="Ваш email">
+
+							<button type="submit" class="submit_btn">Подписаться</button>
+						</form>
+
+					</div>
+
+					<div class="bg lozad" data-background-image="images/bg_subscribe.png"></div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+
+						<div class="links">
+							<div class="title">Наша продукция</div>
+
+							<div class="list">
+								<div><a href="/">Фильтры под раковину</a></div>
+								<div><a href="/">Фильтры-бутылки</a></div>
+								<div><a href="/">Аксессуары и сменные модули</a></div>
+							</div>
+						</div>
+
+
+						<div class="links">
+							<div class="title">Поддержка</div>
+
+							<div class="list">
+								<div><a href="/">Документация</a></div>
+								<div><a href="/">Вопрос-ответ</a></div>
+								<div><a href="/">Гарантия</a></div>
+							</div>
+						</div>
+
+
+						<div class="links">
+							<div class="title">Сервис центр</div>
+
+							<div class="list">
+								<div><a href="/">Монтаж</a></div>
+								<div><a href="/">Обслуживание</a></div>
+								<div><a href="/">Ремонт</a></div>
+							</div>
+						</div>
+
+
+						<div class="menu">
+							<div><a href="/">Проверка подлинности</a></div>
+							<div><a href="/">Доставка и оплата</a></div>
+							<div><a href="/">Личный кабинет</a></div>
+							<div><a href="/">О компании</a></div>
+							<div><a href="/">Блог</a></div>
+							<div><a href="/">Контакты</a></div>
+						</div>
+
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:88005555555">8 800 555-55-55</a>
+							</div>
+
+							<div class="socials">
+								<div class="title">Мы в соцсетях</div>
+
+								<div class="row">
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon icon1"><use xlink:href="images/sprite.svg#ic_soc1"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon icon2"><use xlink:href="images/sprite.svg#ic_soc2"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<svg class="icon icon3"><use xlink:href="images/sprite.svg#ic_soc3"></use></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">2020 &copy; Royal Doulton</div>
+
+						<div class="links">
+							<div><a href="/">Политика конфиденциальности</a></div>
+							<div><a href="/">Пользовательское соглашение</a></div>
+						</div>
+
+						<div class="creator">
+							<a href="/" target="_blank" rel="noopener">Разработка сайта - Quality Performance</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div class="overlay"></div>
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="login_modal">
+			<div class="modal_title">Вход</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input">
+							<div class="label">E-mail <span class="required">*</span></div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input">
+							<div class="label">Пароль <span class="required">*</span></div>
+
+							<button class="view_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_view"></use></svg>
+							</button>
+
+							<div class="recovery">
+								<button class="btn modal_link" data-content="#recovery_modal">Забыли пароль?</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="submit">
+						<button class="btn modal_link" data-content="#register_modal">Регистрация</button>
+
+						<button type="submit" class="submit_btn">Войти</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="register_modal">
+			<div class="modal_title">Регистрация</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+							<div class="label">Ваше имя <span class="required">*</span></div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input">
+							<div class="label">E-mail <span class="required">*</span></div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input">
+							<div class="label">Пароль <span class="required">*</span></div>
+
+							<button class="view_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_view"></use></svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="line agree">
+						<div class="field">
+							<input type="checkbox" name="agree" id="agree_check" checked>
+							<label for="agree_check">Согласие на обработку персональных данных в соответствии с <a href="/">Политикой конфиденциальности</a></label>
+						</div>
+					</div>
+
+					<div class="line exp">
+						<span class="required">*</span>
+						Обязательные поля для заполнения
+					</div>
+
+
+					<div class="submit">
+						<button class="btn modal_link" data-content="#login_modal">Войти</button>
+
+						<button type="submit" class="submit_btn">Зарегестрироватся</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal success_modal" id="register_success_modal">
+			<div class="modal_title">Спасибо!</div>
+
+			<div class="text">Вы успешно зарегистрированы.<br> Проверьте свой E-mail чтобы подтвердить его.</div>
+
+			<div class="btns">
+				<button class="close">Ок</button>
+			</div>
+		</section>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Перезвонить</div>
+
+			<div class="model_desc">
+				<b>Хотите, чтобы мы вам перезвонили?</b>
+				Пожалуйста, оставьте Ваш номер телефона.<br>
+				В рабочее время мы перезваниваем в течении 3 минут
+			</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+							<div class="label">Ваше имя <span class="required">*</span></div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input">
+							<div class="label">+7 (___) ___ - __ - __ <span class="required">*</span></div>
+						</div>
+					</div>
+
+
+					<div class="submit">
+						<button class="btn close">Отменить</button>
+
+						<button type="submit" class="submit_btn">Жду звонка</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="buy_modal">
+			<div class="modal_title">Товар добавлен в корзину</div>
+
+			<div class="cart_info">
+				<div class="product">
+					<a href="/" class="thumb">
+						<img data-src="images/tmp/cart_product_thumb.jpg" alt="" class="lozad">
+					</a>
+
+					<div class="info">
+						<div class="name">
+							<a href="/">Фильтр под раковину со смесителем Royal Doulton®</a>
+						</div>
+
+						<div class="desc">Долговечная система для безопасной питьевой воды прямо у вас дома - фильтр, встраиваемый в трубопровод под кухонной мойкой...</div>
+					</div>
+
+					<div class="amount">
+					    <button type="button" class="minus"></button>
+
+					    <input type="text" value="1" class="input"
+					      data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+					    <button type="button" class="plus"></button>
+
+					    <div class="price"><b>25 990</b> ₽</div>
+					</div>
+
+					<div class="delete">
+						<button></button>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="kit">
+				<div class="title">Покупать комплектом выгоднее</div>
+
+				<div class="row">
+					<div class="product">
+						<a href="/" target="_blank" class="thumb">
+							<img data-src="images/tmp/buy_modal_kit_thumb.jpg" alt="" class="lozad">
+						</a>
+
+						<div class="info">
+							<div class="name">
+								<a href="/">Фильтр под раковину со смесителем Royal Doulton®</a>
+							</div>
+
+							<button class="add_to_cart">Добавить к заказу</button>
+						</div>
+					</div>
+
+					<div class="product">
+						<a href="/" target="_blank" class="thumb">
+							<img data-src="images/tmp/buy_modal_kit_thumb2.jpg" alt="" class="lozad">
+						</a>
+
+						<div class="info">
+							<div class="name">
+								<a href="/">Улучшенный смеситель Royal Doulton Elite</a>
+							</div>
+
+							<button class="add_to_cart">Добавить к заказу</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="links">
+				<button class="close continue">Продолжить покупки</button>
+
+				<a href="/" class="checkout_link">Оформить заказ</a>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/datepicker.js"></script>
+		<script src="js/in-view.min.js"></script>
+		<script src="js/sticky-kit.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
