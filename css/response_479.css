@@ -59,7 +59,7 @@
         display: block;
 
         height: auto;
-        margin-top: 35px;
+        margin-top: 32px;
         margin-left: 0;
         padding: 7px 14px;
     }
@@ -70,8 +70,9 @@
 
         display: block;
 
-        margin-top: 35px;
-        margin-left: auto;
+        margin-top: 32px;
+        margin-right: auto;
+        margin-left: 0;
     }
 
 
@@ -110,7 +111,8 @@
 
     .block_head .title
     {
-        line-height: calc(var(--font_size_title) - 5px);
+        font-size: 26px;
+        line-height: 32px;
     }
 
 
@@ -244,6 +246,17 @@
 
 
 
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data .sub_title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
     /*---------------
         About now
     ---------------*/
@@ -283,11 +296,13 @@
     -------------*/
     .history .block_title
     {
-        font-size: 50px;
-        line-height: 45px;
+        font-size: 25px;
+    }
 
-        margin-bottom: 30px;
-        padding-top: 105px;
+
+    .history .block_desc
+    {
+        margin-bottom: 40px;
     }
 
 
@@ -641,26 +656,66 @@
     /*-----------------
         Main slider
     -----------------*/
-    .main_slider
+    .main_slider .slide .cont
     {
-        margin-bottom: 40px;
+        min-height: 492px;
+        padding-top: 40px;
     }
 
+    .main_slider .slide .info
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 32px 20px;
+    }
 
     .main_slider .slide .title
     {
-        font-size: 60px;
-        line-height: 55px;
+        font-size: 24px;
     }
 
-    .main_slider .slide .title br
+
+
+    /*--------------------
+        Promo products
+    --------------------*/
+    .promo_products .product
     {
-        display: none;
+        padding: 40px 120px 40px 24px;
     }
 
-    .main_slider .slide .desc
+    .promo_products .product .thumb
     {
-        line-height: 24px;
+        bottom: 0;
+
+        min-width: 160px;
+        height: 272px;
+    }
+
+
+    .promo_products .product .thumb.relative + .price
+    {
+        margin-top: 124px;
+    }
+
+
+    .promo_products .product.big
+    {
+        padding-right: 172px;
+    }
+
+    .promo_products .product.big .thumb
+    {
+        right: 16px;
+
+        height: 56%;
+    }
+
+    .promo_products .product.big .price
+    {
+        margin-top: 40px;
     }
 
 
@@ -689,8 +744,8 @@
 
     .advantages .item .name
     {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 19px;
+        line-height: 23px;
     }
 
 
@@ -698,21 +753,24 @@
     /*----------------
         Info block
     ----------------*/
-    .info_block .info .title
+    .info_block .slide .info
     {
-        font-size: 26px;
-        line-height: 36px;
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 32px 20px;
     }
 
-    .info_block .info .title span
+    .info_block .slide .info .desc
     {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
-    .info_block .info .desc
+    .info_block .slide .info .desc > * + *
     {
-        margin-top: 20px;
+        margin-top: 16px;
     }
 
 

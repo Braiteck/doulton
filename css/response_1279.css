@@ -11,6 +11,13 @@
 
 
 
+    .block
+    {
+        margin-bottom: 80px;
+    }
+
+
+
     .owl-carousel .owl-nav button
     {
         bottom: 40px;
@@ -135,9 +142,20 @@
     /*----------------
         Block head
     ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+    .block_head .title
+    {
+        font-size: 32px;
+    }
+
     .block_head .desc
     {
-        line-height: 25px;
+        font-size: 17px;
+        line-height: 23px;
 
         margin-top: 20px;
     }
@@ -216,8 +234,10 @@
 
     .about_info .data .sub_title
     {
-        margin-top: 70px;
-        margin-bottom: 45px;
+        font-size: 28px;
+        line-height: 36px;
+
+        margin-top: 72px;
     }
 
 
@@ -265,7 +285,33 @@
     -------------*/
     .history
     {
-        padding-bottom: 60px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .history .block_title
+    {
+        font-size: 32px;
+
+        width: 544px;
+        margin: 0 auto 40px;
+    }
+
+
+    .history .block_desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 596px;
+        margin-bottom: 80px;
+    }
+
+    .history .block_desc.blue
+    {
+        font-size: 17px;
+        line-height: 25px;
     }
 
 
@@ -284,18 +330,6 @@
     }
 
 
-    .history .block_desc
-    {
-        margin-bottom: 80px;
-    }
-
-    .history .block_desc.blue
-    {
-        font-size: 17px;
-        line-height: 25px;
-    }
-
-
     .history .logos
     {
         padding: 0;
@@ -308,9 +342,9 @@
     }
 
 
-    .history .nsf_cert
+    .history .nsf_cert img
     {
-        margin-right: 0;
+        margin-top: 16px;
     }
 
 
@@ -398,7 +432,7 @@
     ---------------*/
     .subscribe
     {
-        padding-bottom: 100px;
+        padding-bottom: 80px;
     }
 
     .has_question + .subscribe
@@ -713,31 +747,130 @@
     -----------------*/
     .main_slider .slide .cont
     {
-        min-height: 500px;
+        min-height: 512px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
+
 
     .main_slider .slide .info
     {
-        width: 500px;
-        padding-left: 20px;
+        width: 560px;
+        padding: 40px;
+    }
+
+    .main_slider .slide .mib_logo
+    {
+        margin-bottom: 28px;
     }
 
     .main_slider .slide .title
     {
-        font-size: 70px;
-        line-height: 60px;
+        font-size: 32px;
     }
 
-    .main_slider .slide .desc,
+    .main_slider .slide .desc
+    {
+        line-height: 26px;
+
+        margin-top: 24px;
+    }
+
     .main_slider .slide .link
     {
-        margin-top: 40px;
+        margin-top: 52px;
+        padding: 12px 32px;
     }
 
 
     .main_slider .count
     {
         bottom: 100px;
+    }
+
+
+
+    /*--------------------
+        Promo products
+    --------------------*/
+    .promo_products .block_head
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .promo_products .product
+    {
+        padding: 64px 100px 64px 32px;
+    }
+
+
+    .promo_products .product .logo
+    {
+        margin-bottom: 24px;
+    }
+
+    .promo_products .product .logo img
+    {
+        height: 52px;
+    }
+
+    .promo_products .product .name
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .promo_products .product .desc
+    {
+        font-size: 15px;
+
+        margin-top: 28px;
+    }
+
+    .promo_products .product .price
+    {
+        margin-top: 72px;
+    }
+
+    .promo_products .product .thumb
+    {
+        bottom: 8px;
+
+        min-width: 152px;
+        height: 272px;
+    }
+
+    .promo_products .product .thumb.relative
+    {
+        right: 0;
+        bottom: 92px;
+    }
+
+    .promo_products .product .thumb.relative + .price
+    {
+        margin-top: 208px;
+    }
+
+
+    .promo_products .product.big
+    {
+        min-height: 500px;
+    }
+
+    .promo_products .product.big .thumb
+    {
+        top: 0;
+        right: 32px;
+        bottom: 0;
+
+        height: 60%;
+        margin: auto;
+    }
+
+    .promo_products .product.big .price
+    {
+        margin-top: 208px;
     }
 
 
@@ -776,37 +909,51 @@
     /*----------------
         Info block
     ----------------*/
-    .info_block .info
+    .info_block .slide .cont
     {
-        padding: 60px 40px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
-    .info_block .info .title
+    .info_block .slide .info
+    {
+        width: 560px;
+        padding: 40px;
+    }
+
+    .info_block .slide .info .title
     {
         font-size: 32px;
-        line-height: 50px;
     }
 
-    .info_block .info .title span
+    .info_block .slide .info .desc
     {
-        font-size: 65px;
-        line-height: 60px;
+        font-size: 15px;
+
+        margin-top: 24px;
     }
 
-    .info_block .info .desc
+    .info_block .slide .info .link
     {
-        margin-top: 40px;
+        margin-top: 24px;
+        padding: 13px 32px;
     }
 
-    .info_block .info .link
+
+    .info_block .count
     {
-        margin-top: 30px;
+        bottom: 100px;
+        left: 20px;
     }
 
-    .info_block .info .pluses .icon + *,
-    .info_block .info .colors .icon + *
+    .info_block .owl-carousel .owl-nav button.owl-prev
     {
-        width: calc(100% - 56px);
+        left: 20px;
+    }
+
+    .info_block .owl-carousel .owl-nav button.owl-next
+    {
+        left: 73px;
     }
 
 
@@ -1388,6 +1535,18 @@
     footer .menu > * + *
     {
         margin-top: 15px;
+    }
+
+
+
+    footer .menu
+    {
+        column-gap: 40px;
+    }
+
+    footer .menu a
+    {
+        font-size: 13px;
     }
 
 

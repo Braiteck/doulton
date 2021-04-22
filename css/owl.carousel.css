@@ -319,8 +319,8 @@
     transition: border-color .2s linear;
     transform: rotate(-45deg);
 
-    border-top: 1px solid #0c9cd8;
-    border-left: 1px solid #0c9cd8;
+    border-top: 2px solid #0c9cd8;
+    border-left: 2px solid #0c9cd8;
 }
 
 .owl-carousel .owl-nav button.owl-next:after
@@ -328,6 +328,23 @@
     left: -4px;
 
     transform: rotate(-225deg);
+}
+
+
+.info_block .owl-carousel .owl-nav button.owl-prev
+{
+    right: auto;
+    left: 60px;
+
+    margin-right: 0;
+}
+
+.info_block .owl-carousel .owl-nav button.owl-next
+{
+    right: auto;
+    left: 113px;
+
+    margin-right: 0;
 }
 
 

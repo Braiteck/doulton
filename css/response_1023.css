@@ -10,6 +10,11 @@
     }
 
 
+    .block
+    {
+        margin-bottom: 64px;
+    }
+
 
     .owl-carousel .owl-nav button
     {
@@ -35,7 +40,10 @@
         left: 0;
 
         width: 310px;
-        height: auto;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
         margin: 0;
         padding: 0;
 
@@ -122,7 +130,7 @@
         top: 0;
         left: 20px;
 
-        width: 100%;
+        width: calc(100% - 40px);
         margin: 0;
     }
 
@@ -213,6 +221,11 @@
     .block_head
     {
         margin-bottom: 40px;
+    }
+
+    .block_head .title
+    {
+        font-size: 30px;
     }
 
     .block_head .desc
@@ -364,11 +377,11 @@
 
     .about_info .data .sub_title
     {
-        font-size: 50px;
-        line-height: 45px;
+        font-size: 27px;
+        line-height: 33px;
 
         margin-top: 60px;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
     }
 
     .about_info .data .img1,
@@ -405,13 +418,22 @@
     -------------*/
     .history
     {
-        padding: 70px 0 60px;
+        padding: 64px 0;
+    }
+
+
+    .history .block_title
+    {
+        font-size: 30px;
+
+        width: 512px;
+        margin: 0 auto 32px;
     }
 
 
     .history .block_desc
     {
-        margin-bottom: 70px;
+        margin-bottom: 52px;
     }
 
     .history .block_desc.blue
@@ -433,7 +455,9 @@
         font-size: 14px;
 
         height: 40px;
-        margin-top: 35px;
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
         padding: 9px 25px;
     }
 
@@ -443,13 +467,14 @@
         font-size: 17px;
         line-height: 23px;
 
-        max-width: calc(100% - 250px);
-        margin-top: 35px;
+        margin-top: 32px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .history .nsf_cert img
     {
-        margin-top: 5px;
+        margin-top: 8px;
     }
 
 
@@ -510,7 +535,7 @@
     ---------------*/
     .subscribe
     {
-        padding-bottom: 80px;
+        padding-bottom: 72px;
     }
 
 
@@ -677,6 +702,12 @@
     .articles .col_left > *
     {
         width: calc(50% - 10px);
+    }
+
+
+    .articles .article .date .day
+    {
+        font-size: 32px;
     }
 
 
@@ -872,25 +903,37 @@
     -----------------*/
     .main_slider .slide .cont
     {
-        min-height: 450px;
+        min-height: 480px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
     .main_slider .slide .info
     {
-        width: 410px;
-        padding-left: 0;
+        width: 520px;
+    }
+
+    .main_slider .slide .mib_logo
+    {
+        margin-bottom: 20px;
     }
 
     .main_slider .slide .title
     {
-        font-size: 60px;
-        line-height: 50px;
+        font-size: 30px;
     }
 
-    .main_slider .slide .desc,
+    .main_slider .slide .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 20px;
+    }
+
     .main_slider .slide .link
     {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
 
@@ -901,12 +944,56 @@
 
 
 
+    /*--------------------
+        Promo products
+    --------------------*/
+    .promo_products .block_head
+    {
+        margin-bottom: 56px;
+    }
+
+
+    .promo_products .row > *
+    {
+        width: 50%;
+    }
+
+
+    .promo_products .product
+    {
+        padding-right: 132px;
+    }
+
+
+
+    .promo_products .product.big
+    {
+        width: 100%;
+        min-height: 0;
+
+        order: 3;
+    }
+
+    .promo_products .product.big .price
+    {
+        margin-top: 112px;
+    }
+
+    .promo_products .product.big .thumb
+    {
+        right: 64px;
+
+        height: 80%;
+    }
+
+
+
     /*----------------
         Advantages
     ----------------*/
     .advantages
     {
-        padding: 70px 0;
+        padding: 64px 0;
     }
 
 
@@ -930,8 +1017,24 @@
 
     .advantages .item .name
     {
+        font-size: 21px;
+        line-height: 25px;
+
         height: auto !important;
         margin-top: 0;
+    }
+
+    .advantages .item .name br
+    {
+        display: none;
+    }
+
+    .advantages .item .desc
+    {
+        font-size: 15px;
+
+        height: auto !important;
+        margin-top: 12px;
     }
 
     .advantages .item .link
@@ -948,45 +1051,32 @@
     /*----------------
         Info block
     ----------------*/
-    .info_block .info
+    .info_block .slide .cont
     {
-        padding: 50px 20px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
-    .info_block .info .title span
+
+    .info_block .slide .info
     {
-        font-size: 54px;
-        line-height: 50px;
+        width: 500px;
     }
 
-    .info_block .info .title
+    .info_block .slide .info .title
     {
         font-size: 30px;
-        line-height: 40px;
     }
 
-    .info_block .info .desc
+    .info_block .slide .info .desc
     {
-        margin-top: 30px;
-    }
-
-    .info_block .info .link
-    {
-        font-size: 14px;
-
-        height: 40px;
         margin-top: 20px;
-        padding: 9px 25px;
     }
 
-    .info_block .info .pluses
-    {
-        margin-top: 25px;
-    }
 
-    .info_block .info .pluses > * + *
+    .info_block .count
     {
-        margin-top: 15px;
+        bottom: 80px;
     }
 
 

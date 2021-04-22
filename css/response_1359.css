@@ -22,6 +22,10 @@
     /*------------
         Header
     ------------*/
+    header .row
+    {
+        padding-left: 180px;
+    }
 
 
 
@@ -239,16 +243,43 @@
     /*-----------------
         Main slider
     -----------------*/
-    .main_slider .slide .cont
-    {
-        min-height: 600px;
-    }
-
     .main_slider .count
     {
         right: 20px;
 
         margin-right: 0;
+    }
+
+
+
+    /*--------------------
+        Promo products
+    --------------------*/
+    .promo_products .product
+    {
+        padding: 80px 156px 80px 48px;
+    }
+
+
+    .promo_products .product .thumb
+    {
+        bottom: 12px;
+
+        min-width: 200px;
+        height: 380px;
+    }
+
+
+    .promo_products .product .thumb.relative
+    {
+        right: 12px;
+        bottom: 100px;
+    }
+
+
+    .promo_products .product.big
+    {
+        min-height: 600px;
     }
 
 
@@ -288,40 +319,11 @@
     /*----------------
         Info block
     ----------------*/
-    .info_block .info
+    .info_block .slide .cont
     {
-        width: calc(50% + 20px);
-        margin-left: -20px;
-        padding: 60px 80px;
-    }
-
-    .info_block .img + .info
-    {
-        margin-right: -20px;
-    }
-
-
-    .info_block .info .title
-    {
-        font-size: 36px;
-        line-height: 56px;
-    }
-
-    .info_block .info .title span
-    {
-        font-size: 75px;
-    }
-
-
-    .info_block .img
-    {
-        width: calc(50% + 20px);
-        margin-left: -20px;
-    }
-
-    .info_block .info + .img
-    {
-        margin-right: -20px;
+        min-height: 0;
+        padding-top: 92px;
+        padding-bottom: 92px;
     }
 
 
