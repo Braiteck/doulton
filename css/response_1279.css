@@ -679,13 +679,7 @@
 
     .contacts_info .info .title
     {
-        font-size: 36px;
-        line-height: 46px;
-    }
-
-    .contacts_info .info .title span
-    {
-        font-size: 65px;
+        font-size: 32px;
     }
 
     .contacts_info .info .item
@@ -1100,6 +1094,13 @@
     .support
     {
         margin-bottom: 70px;
+    }
+
+    .support .block_title
+    {
+        font-size: 32px;
+
+        margin-bottom: 32px;
     }
 
     .support .page_links

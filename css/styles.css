@@ -5890,6 +5890,8 @@ header .cart_link .icon
 
 .support .page_links
 {
+    z-index: 99;
+
     margin-bottom: 62px;
     padding: 24px 0 20px;
 
@@ -5929,9 +5931,9 @@ header .cart_link .icon
 .support .block_title
 {
     color: #0c9cd8;
-    font-family: var(--font_family3);
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 120%;
 
     margin-bottom: 40px;
 
@@ -6407,8 +6409,9 @@ header .cart_link .icon
 
 .contacts_info .info .title
 {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 120%;
 
     width: 100%;
 }
@@ -6416,10 +6419,6 @@ header .cart_link .icon
 .contacts_info .info .title span
 {
     color: #0c9cd8;
-    font-family: var(--font_family3);
-    font-size: 80px;
-    font-weight: normal;
-    line-height: 50px;
 }
 
 .contacts_info .info .item

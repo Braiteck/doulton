@@ -598,13 +598,8 @@
     -------------------*/
     .contacts_info .info .title
     {
-        font-size: 25px;
-        line-height: 31px;
-    }
-
-    .contacts_info .info .title span
-    {
-        font-size: 48px;
+        font-size: 22px;
+        line-height: 28px;
     }
 
 
@@ -954,6 +949,12 @@
     /*-------------
         Support
     -------------*/
+    .support .block_title
+    {
+        font-size: 25px;
+    }
+
+
     .support .page_links .row
     {
         padding: 0 10px;
@@ -965,13 +966,6 @@
 
         margin: 0 0 10px;
         padding: 8px 17px;
-    }
-
-
-    .support .block_title
-    {
-        font-size: 50px;
-        line-height: 35px;
     }
 
 
