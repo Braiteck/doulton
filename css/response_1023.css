@@ -1601,6 +1601,36 @@
 
 
 
+    /*-------------------------------
+        Promo category - Products
+    -------------------------------*/
+    .promo_category .products_list .product .thumb
+    {
+        width: 100%;
+        padding-bottom: 73.85%;
+    }
+
+
+    .promo_category .products_list .product .data
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .promo_category .products_list .product .name
+    {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .promo_category .products_list .product ul,
+    .promo_category .products_list .product .buy
+    {
+        margin-top: 20px;
+    }
+
+
+
     /*---------------
         Load more
     ---------------*/

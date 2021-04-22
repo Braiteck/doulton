@@ -1516,6 +1516,111 @@
 
 
 
+    /*--------------------
+        Promo category
+    --------------------*/
+    .promo_category .head
+    {
+        margin-bottom: 52px;
+        padding: 24px 0 60px;
+    }
+
+    .promo_category .head .info
+    {
+        width: 500px;
+        padding: 32px;
+    }
+
+    .promo_category .head .info .title
+    {
+        font-size: 30px;
+    }
+
+    .promo_category .head .info .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 20px;
+    }
+
+    .promo_category .head .info ul li
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-------------------------------
+        Promo category - Products
+    -------------------------------*/
+    .promo_category .products_list .product .thumb
+    {
+        padding-bottom: 380px;
+    }
+
+    .promo_category .products_list .product .data
+    {
+        width: calc(50% - 52px);
+        padding-top: 0;
+    }
+
+    .promo_category .products_list .product .name
+    {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .promo_category .products_list .product .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 20px;
+    }
+
+    .promo_category .products_list .product .color
+    {
+        margin-top: 20px;
+    }
+
+    .promo_category .products_list .product .color .current
+    {
+        font-size: 15px;
+    }
+
+    .promo_category .products_list .product .color .vals
+    {
+        margin-top: 8px;
+    }
+
+    .promo_category .products_list .product ul li
+    {
+        font-size: 15px;
+    }
+
+    .promo_category .products_list .product .buy
+    {
+        margin-top: 32px;
+    }
+
+    .promo_category .products_list .product .price
+    {
+        font-size: 28px;
+    }
+
+    .promo_category .products_list .product .price b
+    {
+        font-size: 36px;
+    }
+
+    .promo_category .products_list .product .color ~ .buy
+    {
+        margin-top: 20px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -1238,6 +1238,43 @@
 
 
 
+    /*-------------------------------
+        Promo category - Products
+    -------------------------------*/
+    .promo_category .head .info
+    {
+        padding: 32px 20px;
+    }
+
+    .promo_category .head .info .title
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*-------------------------------
+        Promo category - Products
+    -------------------------------*/
+    .promo_category .products_list .product .name
+    {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+
+    .promo_category .products_list .product .price
+    {
+        font-size: 25px;
+    }
+
+    .promo_category .products_list .product .price b
+    {
+        font-size: 32px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

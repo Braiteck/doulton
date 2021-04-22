@@ -1420,6 +1420,40 @@
 
 
 
+    /*-------------------------------
+        Promo category - Products
+    -------------------------------*/
+    .promo_category .head
+    {
+        padding-bottom: 0;
+
+        border-width: 10px;
+    }
+
+
+    .promo_category .head .info
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 32px;
+    }
+
+    .promo_category .head .info .title
+    {
+        font-size: 27px;
+    }
+
+    .promo_category .head .info .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 16px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
