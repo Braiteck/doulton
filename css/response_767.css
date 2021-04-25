@@ -507,7 +507,7 @@
     .promo_buy_product .thumb
     {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
         padding-bottom: 112%;
     }
 
@@ -732,7 +732,8 @@
     /*----------------
         Advantages
     ----------------*/
-    .advantages
+    .advantages,
+    .advantages.min_pad
     {
         padding: 60px 0;
     }
@@ -1032,19 +1033,19 @@
     }
 
 
-    .product_info .product_name
+    .product_info .data .product_name
     {
         font-size: 25px;
         line-height: 31px;
     }
 
 
-    .product_info .buy_info .price
+    .product_info .data .buy_info .price
     {
         margin-top: 0;
     }
 
-    .product_info .buy_info .buy_btn
+    .product_info .data .buy_info .buy_btn
     {
         width: 100%;
         margin-top: 5px;
@@ -1052,14 +1053,32 @@
     }
 
 
-    .product_info .features
+    .product_info .data .features
     {
         font-size: 15px;
     }
 
-    .product_info .features .item .name:before
+    .product_info .data .features .item .name:before
     {
         top: 13px;
+    }
+
+
+
+    .product_info .delivery_info .title
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        width: 100%;
+        margin-bottom: 15px;
+
+        text-align: center;
+    }
+
+    .product_info .delivery_info .details
+    {
+        margin-left: 0;
     }
 
 
@@ -1157,40 +1176,31 @@
         padding-bottom: 50px;
     }
 
+    .promo_product .head .bg
+    {
+        background-position: 75% 50%;
+    }
+
     .promo_product .head .info
     {
         width: 100%;
-        margin-top: 60px;
     }
 
     .promo_product .head .info .title
     {
-        font-size: 28px;
-        line-height: 36px;
-    }
-
-    .promo_product .head .info.light .title
-    {
-        line-height: 24px;
-    }
-
-    .promo_product .head .info .title span
-    {
-        font-size: 60px;
-        line-height: 20px;
+        font-size: 27px;
     }
 
     .promo_product .head .info .desc
     {
-        line-height: 24px;
-
-        margin-top: 29px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .promo_product .head .info .price,
     .promo_product .head .info .buy_btn
     {
-        margin-top: 25px;
+        margin-top: 0;
     }
 
     .promo_product .head .info .price .val b
@@ -1214,15 +1224,23 @@
 
     .promo_product .description
     {
-        padding: 60px 0;
+        padding: 50px 0;
     }
 
 
 
-    .promo_product .info_block .info .title
+    /*----------------------
+        Promo info block
+    ----------------------*/
+    .promo_info_block + .promo_info_block
+    {
+        margin-top: 50px;
+    }
+
+    .promo_info_block .info .title
     {
         font-size: 25px;
-        line-height: 31px;
+        line-height: 29px;
     }
 
 

@@ -531,33 +531,49 @@
 
     .promo_buy_product .thumb
     {
-        width: calc(46.44% - 40px);
+        width: calc(46.44% - 20px);
     }
 
     .promo_buy_product .info
     {
-        width: calc(53.56% - 40px);
+        width: calc(53.56% - 20px);
     }
 
     .promo_buy_product .name
     {
-        font-size: 30px;
-        line-height: 38px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .promo_buy_product .desc
+    {
+        font-size: 15px;
+
+        margin-top: 20px;
     }
 
     .promo_buy_product .features
     {
-        margin-top: 30px;
-    }
+        font-size: 15px;
 
-    .promo_buy_product .features > * + *
-    {
-        margin-top: 10px;
+        margin-top: 24px;
     }
 
     .promo_buy_product .price
     {
-        margin-top: 35px;
+        font-size: 28px;
+
+        margin-top: 32px;
+    }
+
+    .promo_buy_product .price b
+    {
+        font-size: 36px;
+    }
+
+    .promo_buy_product .link
+    {
+        margin-top: 32px;
     }
 
 
@@ -872,7 +888,8 @@
     /*----------------
         Advantages
     ----------------*/
-    .advantages
+    .advantages,
+    .advantages.min_pad
     {
         padding: 80px 0;
     }
@@ -1220,29 +1237,29 @@
     }
 
 
-    .product_info .product_name
+    .product_info .data .product_name
     {
         font-size: 30px;
         line-height: 120%;
     }
 
-    .product_info .desc
+    .product_info .data .desc
     {
         margin-top: 20px;
     }
 
 
-    .product_info .buy_info .discount + .info
+    .product_info .data .buy_info .discount + .info
     {
         width: calc(100% - 140px);
     }
 
-    .product_info .buy_info .price
+    .product_info .data .buy_info .price
     {
         font-size: 22px;
     }
 
-    .product_info .buy_info .price .old
+    .product_info .data .buy_info .price .old
     {
         font-size: 16px;
         line-height: 28px;
@@ -1250,12 +1267,12 @@
         margin-right: 20px;
     }
 
-    .product_info .buy_info .price b
+    .product_info .data .buy_info .price b
     {
         font-size: 28px;
     }
 
-    .product_info .buy_info .buy_btn
+    .product_info .data .buy_info .buy_btn
     {
         width: auto;
         height: 40px;
@@ -1264,33 +1281,73 @@
     }
 
 
-    .product_info .buy_info .discount
+    .product_info .data .buy_info .discount
     {
         width: 140px;
     }
 
-    .product_info .buy_info .discount .val
+    .product_info .data .buy_info .discount .val
     {
         font-size: 70px;
     }
 
 
-    .product_info .features
+    .product_info .data .features
     {
         font-size: 16px;
 
         margin-top: 20px;
     }
 
-    .product_info .features .item + .item
+    .product_info .data .features .item + .item
     {
         margin-top: 20px;
     }
 
-    .product_info .features .item .name,
-    .product_info .features .item .val
+    .product_info .data .features .item .name,
+    .product_info .data .features .item .val
     {
         width: calc(50% - 10px);
+    }
+
+
+
+    .product_info .info
+    {
+        width: calc(52.65% - 60px);
+    }
+
+    .product_info .info .name
+    {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .product_info .info ul li
+    {
+        font-size: 15px;
+    }
+
+    .product_info .info .buy
+    {
+        margin-top: 32px;
+    }
+
+    .product_info .info .price
+    {
+        font-size: 28px;
+    }
+
+    .product_info .info .price b
+    {
+        font-size: 36px;
+    }
+
+
+
+    .product_info .delivery_info
+    {
+        margin-top: 50px;
     }
 
 
@@ -1303,7 +1360,7 @@
         display: flex;
 
         height: auto;
-        margin-bottom: -30px;
+        margin-bottom: -40px;
         margin-left: -30px;
         padding: 0;
 
@@ -1320,6 +1377,7 @@
 
         position: relative;
         top: 0;
+        left: 0;
 
         width: calc(100% - 30px);
         margin-bottom: 35px;
@@ -1339,7 +1397,7 @@
         visibility: visible;
 
         width: calc(33.333% - 30px);
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         margin-left: 30px;
         padding: 0;
 
@@ -1358,8 +1416,8 @@
 
     .how_it_work .items .item .name
     {
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 26px;
     }
 
     .how_it_work .items .item .desc
@@ -1385,26 +1443,30 @@
     -------------------*/
     .promo_product .head
     {
-        min-height: 500px;
+        min-height: 0;
+        padding-bottom: 60px;
     }
+
 
     .promo_product .head .info
     {
         width: 550px;
-        margin-top: 80px;
-        padding-left: 20px;
+        min-height: 420px;
+        margin-top: 20px;
+        padding: 40px;
     }
 
     .promo_product .head .info .title
     {
-        line-height: 50px;
+        font-size: 32px;
     }
 
     .promo_product .head .info .desc
     {
-        line-height: 27px;
+        font-size: 16px;
+        line-height: 24px;
 
-        margin-top: 30px;
+        margin-top: 24px;
     }
 
 
@@ -1417,20 +1479,56 @@
 
 
 
-    .promo_product .info_block .info .title
+    .promo_product .description
     {
-        line-height: 36px;
+        padding: 64px 0;
     }
 
-    .promo_product .info_block .info .title span
+
+
+    /*----------------------
+        Promo info block
+    ----------------------*/
+    .promo_info_block .info
     {
-        line-height: 60px;
+        padding: 64px 64px 64px 0;
+    }
 
-        display: inline-block;
+    .promo_info_block .img + .info
+    {
+        padding-right: 0;
+        padding-left: 64px;
+    }
 
-        padding-bottom: 10px;
+    .promo_info_block .info .title
+    {
+        font-size: 30px;
+    }
 
-        vertical-align: top;
+    .promo_info_block .info .desc
+    {
+        font-size: 15px;
+
+        margin-top: 28px;
+    }
+
+    .promo_info_block .info .pluses,
+    .promo_info_block .info .colors
+    {
+        margin-top: 40px;
+    }
+
+
+    .promo_info_block .img
+    {
+        width: calc(50% + 20px);
+        min-height: 600px;
+        margin-left: -20px;
+    }
+
+    .promo_info_block .info + .img
+    {
+        margin-right: -20px;
     }
 
 
@@ -1446,8 +1544,8 @@
 
     .features_block .tech .item .name
     {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 26px;
     }
 
 
@@ -1484,22 +1582,20 @@
     -----------------*/
     .product_kit .kit_total .discount
     {
-        min-height: 100px;
+        min-height: 127px;
     }
 
     .product_kit .kit_total .discount .val
     {
-        font-size: 70px;
+        font-size: 52px;
+        line-height: 100%;
 
-        height: 45px;
-        margin-top: 0;
+        margin-top: 12px;
     }
 
     .product_kit .kit_total .price
     {
         font-size: 28px;
-
-        margin-top: 80px;
     }
 
     .product_kit .kit_total .price b

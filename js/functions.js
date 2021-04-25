@@ -13,9 +13,9 @@ $(() => {
 	// Ленивая загрузка
 	setTimeout(() => {
 		observer = lozad('.lozad', {
-			rootMargin : '200px 0px',
-			threshold  : 0,
-			loaded     : (el) => el.classList.add('loaded')
+			rootMargin: '200px 0px',
+			threshold: 0,
+			loaded: (el) => el.classList.add('loaded')
 		})
 
 		observer.observe()
@@ -40,44 +40,44 @@ $(() => {
 
 
 	// Fancybox
-	$.fancybox.defaults.hash             = false
-	$.fancybox.defaults.backFocus        = false
-	$.fancybox.defaults.autoFocus        = false
-	$.fancybox.defaults.animationEffect  = 'zoom'
+	$.fancybox.defaults.hash = false
+	$.fancybox.defaults.backFocus = false
+	$.fancybox.defaults.autoFocus = false
+	$.fancybox.defaults.animationEffect = 'zoom'
 	$.fancybox.defaults.transitionEffect = 'slide'
-	$.fancybox.defaults.speed            = 500
-	$.fancybox.defaults.gutter           = 40
-	$.fancybox.defaults.i18n             = {
+	$.fancybox.defaults.speed = 500
+	$.fancybox.defaults.gutter = 40
+	$.fancybox.defaults.i18n = {
 		'en': {
-			CLOSE       : "Закрыть",
-			NEXT        : "Следующий",
-			PREV        : "Предыдущий",
-			ERROR       : "Запрошенный контент не может быть загружен.<br /> Пожалуйста, повторите попытку позже.",
-			PLAY_START  : "Запустить слайдшоу",
-			PLAY_STOP   : "Остановить слайдшоу",
-			FULL_SCREEN : "На весь экран",
-			THUMBS      : "Миниатюры",
-			DOWNLOAD    : "Скачать",
-			SHARE       : "Поделиться",
-			ZOOM        : "Увеличить"
+			CLOSE: "Закрыть",
+			NEXT: "Следующий",
+			PREV: "Предыдущий",
+			ERROR: "Запрошенный контент не может быть загружен.<br /> Пожалуйста, повторите попытку позже.",
+			PLAY_START: "Запустить слайдшоу",
+			PLAY_STOP: "Остановить слайдшоу",
+			FULL_SCREEN: "На весь экран",
+			THUMBS: "Миниатюры",
+			DOWNLOAD: "Скачать",
+			SHARE: "Поделиться",
+			ZOOM: "Увеличить"
 		}
 	}
 
 	// Всплывающие окна
-	$('body').on('click', '.modal_link', function(e) {
+	$('body').on('click', '.modal_link', function (e) {
 		e.preventDefault()
 
 		$.fancybox.close(true)
 
 		$.fancybox.open({
-			src   : $(this).data('content'),
-			type  : 'inline',
-			touch : false
+			src: $(this).data('content'),
+			type: 'inline',
+			touch: false
 		})
 	})
 
 	// Закрытие всплывающего окна по произвольной кнопке
-	$('body').on('click', '.modal .close', function(e) {
+	$('body').on('click', '.modal .close', function (e) {
 		e.preventDefault()
 
 		$.fancybox.close(true)
@@ -85,14 +85,14 @@ $(() => {
 
 	// Увеличение картинки
 	$('.fancy_img').fancybox({
-		mobile : {
-			clickSlide : "close"
+		mobile: {
+			clickSlide: "close"
 		}
 	})
 
 
 	// Мини всплывающие окна
-	$('.mini_modal_link').click(function(e) {
+	$('.mini_modal_link').click(function (e) {
 		e.preventDefault()
 
 		const modalId = $(this).data('modal-id')
@@ -120,7 +120,7 @@ $(() => {
 		if ($(e.target).closest('.modal_cont').length === 0) {
 			$('.mini_modal, .mini_modal_link').removeClass('active')
 
-			if(!$('body').hasClass('menu_open')) $('.overlay').fadeOut(300)
+			if (!$('body').hasClass('menu_open')) $('.overlay').fadeOut(300)
 
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		}
@@ -129,17 +129,17 @@ $(() => {
 
 	// Плавная прокрутка к якорю
 	// Работает и при прокрутке к табу
-	$('.scroll_link').click(function(e) {
+	$('.scroll_link').click(function (e) {
 		e.preventDefault()
 
-		let href      = $(this).data('anchor'),
-			addOffset = 0
+		let href = $(this).data('anchor'),
+			addOffset = $('.page_links').outerHeight() || 0
 
 		if ($(this).data('offset')) addOffset = $(this).data('offset')
 
 		if ($('.tabs button[data-content="' + href + ']"').length) {
-			const $activeTab = $('.tabs button[data-content="'+ href +'"]'),
-				  $parent    = $activeTab.closest('.tabs_container')
+			const $activeTab = $('.tabs button[data-content="' + href + '"]'),
+				$parent = $activeTab.closest('.tabs_container')
 
 			$parent.find('> .tabs button, > .tab_content').removeClass('active')
 
@@ -152,11 +152,11 @@ $(() => {
 
 
 	// Аккордион
-	$('.accordion .item .title').click(function(e) {
+	$('.accordion .item .title').click(function (e) {
 		e.preventDefault()
 
-		const $item      = $(this).closest('.item'),
-			  $accordion = $(this).closest('.accordion')
+		const $item = $(this).closest('.item'),
+			$accordion = $(this).closest('.accordion')
 
 		if ($item.hasClass('active')) {
 			$item.removeClass('active').find('.data').slideUp(300)
@@ -170,39 +170,39 @@ $(() => {
 
 
 	// Изменение количества товара
-	$('body').on('click', '.amount .minus', function(e) {
+	$('body').on('click', '.amount .minus', function (e) {
 		e.preventDefault()
 
-		const $parent  = $(this).closest('.amount'),
-			  $input   = $parent.find('.input'),
-			  inputVal = parseFloat($input.val()),
-			  minimum  = parseFloat($input.data('minimum')),
-			  step     = parseFloat($input.data('step')),
-			  unit     = $input.data('unit')
+		const $parent = $(this).closest('.amount'),
+			$input = $parent.find('.input'),
+			inputVal = parseFloat($input.val()),
+			minimum = parseFloat($input.data('minimum')),
+			step = parseFloat($input.data('step')),
+			unit = $input.data('unit')
 
 		if (inputVal > minimum) $input.val(inputVal - step + unit)
 	})
 
-	$('body').on('click', '.amount .plus', function(e) {
+	$('body').on('click', '.amount .plus', function (e) {
 		e.preventDefault()
 
-		const $parent  = $(this).closest('.amount'),
-			  $input   = $parent.find('.input'),
-			  inputVal = parseFloat($input.val()),
-			  maximum  = parseFloat($input.data('maximum')),
-			  step     = parseFloat($input.data('step')),
-			  unit     = $input.data('unit')
+		const $parent = $(this).closest('.amount'),
+			$input = $parent.find('.input'),
+			inputVal = parseFloat($input.val()),
+			maximum = parseFloat($input.data('maximum')),
+			step = parseFloat($input.data('step')),
+			unit = $input.data('unit')
 
 		if (inputVal < maximum) $input.val(inputVal + step + unit)
 	})
 
-	$('.amount .input').keydown(function() {
-		const _self   = $(this),
-			  maximum = parseInt(_self.data('maximum'))
+	$('.amount .input').keydown(function () {
+		const _self = $(this),
+			maximum = parseInt(_self.data('maximum'))
 
 		setTimeout(() => {
-			if(_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
-			if(_self.val() > maximum) _self.val(maximum)
+			if (_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
+			if (_self.val() > maximum) _self.val(maximum)
 		})
 	})
 
@@ -210,14 +210,14 @@ $(() => {
 	// Табы
 	var locationHash = window.location.hash
 
-	$('body').on('click', '.tabs button', function(e) {
+	$('body').on('click', '.tabs button', function (e) {
 		e.preventDefault()
 
 		if (!$(this).hasClass('active')) {
-			const $parent           = $(this).closest('.tabs_container'),
-				  activeTab         = $(this).data('content'),
-				  $activeTabContent = $(activeTab),
-				  level             = $(this).data('level')
+			const $parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				$activeTabContent = $(activeTab),
+				level = $(this).data('level')
 
 			$parent.find('.tabs:first button').removeClass('active')
 			$parent.find('.tab_content.' + level).removeClass('active')
@@ -228,10 +228,10 @@ $(() => {
 	})
 
 	if (locationHash && $('.tabs_container').length) {
-		const $activeTab        = $('.tabs button[data-content=' + locationHash + ']'),
-			  $activeTabContent = $(locationHash),
-			  $parent           = activeTab.closest('.tabs_container'),
-			  level             = activeTab.data('level')
+		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
+			$activeTabContent = $(locationHash),
+			$parent = activeTab.closest('.tabs_container'),
+			level = activeTab.data('level')
 
 		$parent.find('.tabs:first button').removeClass('active')
 		$parent.find('.tab_content.' + level).removeClass('active')
@@ -270,7 +270,7 @@ $(() => {
 	if (is_touch_device()) {
 		$('header .menu .item > a.sub_link').addClass('touch_link')
 
-		$('header .menu .item > a.sub_link').click(function(e) {
+		$('header .menu .item > a.sub_link').click(function (e) {
 			const $dropdown = $(this).next()
 
 			if ($dropdown.css('visibility') === 'hidden') {
@@ -318,7 +318,7 @@ $(window).resize(() => {
 const setHeight = (className) => {
 	let maxheight = 0
 
-	className.each(function() {
+	className.each(function () {
 		const elHeight = $(this).outerHeight()
 
 		if (elHeight > maxheight) maxheight = elHeight
@@ -334,9 +334,9 @@ const is_touch_device = () => !!('ontouchstart' in window)
 const widthScroll = () => {
 	let div = document.createElement('div')
 
-	div.style.overflowY  = 'scroll'
-	div.style.width      = '50px'
-	div.style.height     = '50px'
+	div.style.overflowY = 'scroll'
+	div.style.width = '50px'
+	div.style.height = '50px'
 	div.style.visibility = 'hidden'
 
 	document.body.appendChild(div)

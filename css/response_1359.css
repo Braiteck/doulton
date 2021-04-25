@@ -282,7 +282,8 @@
     /*----------------
         Advantages
     ----------------*/
-    .advantages
+    .advantages,
+    .advantages.min_pad
     {
         padding: 100px 0;
     }
@@ -427,24 +428,59 @@
     /*------------------
         Product info
     ------------------*/
-    .product_info .product_name
+    .product_info .data .product_name
     {
         font-size: 32px;
     }
 
-    .product_info .buy_info .discount + .info
+    .product_info .data .buy_info .discount + .info
     {
         width: calc(100% - 160px);
     }
 
-    .product_info .buy_info .price b
+    .product_info .data .buy_info .price b
     {
         font-size: 36px;
     }
 
-    .product_info .buy_info .discount
+    .product_info .data .buy_info .discount
     {
         width: 160px;
+    }
+
+
+
+    .product_info .info
+    {
+        width: calc(52.65% - 72px);
+    }
+
+    .product_info .info .name
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .product_info .info ul li
+    {
+        font-size: 16px;
+    }
+
+    .product_info .info ul li + li
+    {
+        margin-top: 8px;
+    }
+
+    .product_info .info .buy
+    {
+        margin-top: 40px;
+    }
+
+
+
+    .product_info .delivery_info
+    {
+        margin-top: 60px;
     }
 
 
@@ -454,8 +490,15 @@
     -----------------*/
     .how_it_work .items .title
     {
-        font-size: 32px;
+        font-size: 30px;
         line-height: 120%;
+
+        left: 65px;
+    }
+
+    .how_it_work3 .items .title
+    {
+        left: 50px;
     }
 
 
@@ -525,19 +568,8 @@
     -------------------*/
     .promo_product .head
     {
-        min-height: 550px;
+        padding-bottom: 72px;
     }
-
-    .promo_product .head .info
-    {
-        margin-top: 100px;
-    }
-
-    .promo_product .head .info.light .title
-    {
-        line-height: 40px;
-    }
-
 
 
     .promo_product .page_links
@@ -552,23 +584,18 @@
 
 
 
-    .promo_product .description
+    /*----------------------
+        Promo info block
+    ----------------------*/
+    .promo_info_block .info .title
     {
-        padding: 80px 0;
+        font-size: 32px;
     }
 
 
-
-    .promo_product .info_block .info .title
+    .promo_info_block .img
     {
-        line-height: 42px;
-    }
-
-    .promo_product .info_block .info .title span
-    {
-        line-height: 60px;
-
-        padding-bottom: 15px;
+        min-height: 700px;
     }
 
 
@@ -586,12 +613,6 @@
     {
         min-height: 240px;
         padding: 40px;
-    }
-
-    .features_block .tech .item .name
-    {
-        font-size: 28px;
-        line-height: 32px;
     }
 
 
@@ -622,12 +643,39 @@
 
 
 
+
+    /*-----------------------
+        Promo buy product
+    -----------------------*/
+    .promo_buy_product .info
+    {
+        width: calc(47.6% - 52px);
+    }
+
+
+
     /*-----------------
         Product kit
     -----------------*/
     .product_kit .delivery_info
     {
         margin-top: 60px;
+    }
+
+
+    .product_kit .kit_total .discount
+    {
+        min-height: 169px;
+    }
+
+    .product_kit .kit_total .discount .val
+    {
+        margin-top: 20px;
+    }
+
+    .product_kit .kit_total .info
+    {
+        padding: 24px 20px;
     }
 
 
